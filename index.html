@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/650855182c.js" crossorigin="anonymous"></script>
+	<title>Bistro Burger</title>
+
+</head>
+
+<body>
+	<header>
+		<div class="slideout-menu" id="slideout-menu">
+			<ul>
+				<li class="slideout-menu-links"><a href="#home" class="active">Home</a></li>
+				<li class="slideout-menu-links"><a href="#menu">Menu</a></li>
+				<li class="slideout-menu-links"><a href="#about-us">About Us</a></li>
+				<li class="slideout-menu-links"><a href="#contact-us">Contact</a></li>
+				<li>
+					<!-- <div class="search-group"> -->
+					<form action="post">
+						<input type="text" placeholder="Search Here">
+						<button><i class="fas fa-search"></i></button>
+					</form>
+					<!-- </div> -->
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			<nav>
+				<img src="img/fast-food.svg" alt="Fast Food Logo">
+				<ul>
+					<li><a href="#home" class="active">Home</a></li>
+					<li><a href="#menu">Menu</a></li>
+					<li><a href="#about-us">About Us</a></li>
+					<li><a href="#contact-us">Contact</a></li>
+				</ul>
+				<div class="menu-icon" id="menu-icon">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="search-group">
+					<form action="post">
+						<input type="text" placeholder="Search Here">
+						<button><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+			</nav>
+		</div>
+
+		<div id="home" class="container hero-section">
+			<div class="company-desc">
+				<h1>Burger Bistro</h1>
+				<p>The best food is that which is made from the heart.</p>
+				<button class="orange-round-btn">More Deals</button>
+			</div>
+			<div class="product-carousel">
+				<img src="img/cheese-burger.png" alt="">
+				<div class="carousel-buttons">
+					<button class="round-button disabled-carousel-button">&#60;</button>
+					<button class="round-button">&#62;</button>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<div id="menu" class="menu">
+		<div class="container">
+			<h2>Burger Menu</h2>
+			<div class="burger-menu-categories">
+				<ul>
+					<li class="active">Best Sales</li>
+					<li>Recomended</li>
+					<li>Beef Burgers</li>
+					<li>Chicken Burgers</li>
+					<li>Vegetarian Burgers</li>
+				</ul>
+			</div>
+		</div>
+		<div class="burger-menu-carousel">
+			<div class="prev-arrow"><i class="fas fa-less-than"></i></div>
+			<div class="burger-menu-items container">
+				<div class="burger-item-card">
+					<img src="img/burger1.jpg" alt="">
+					<h3>Beef Burger</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero rhoncus
+						posuere. Donec consequat laoreet massa. Duis.
+					</p>
+					<div>
+						<h4>
+							Price: $7
+						</h4>
+						<button class="white-round-btn">Order Now</button>
+					</div>
+				</div>
+				<div class="burger-item-card">
+					<img src="img/burger2.jpg" alt="">
+					<h3>Cheese Burger</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero rhoncus
+						posuere. Donec consequat laoreet massa. Duis.
+					</p>
+					<div>
+						<h4>
+							Price: $10
+						</h4>
+						<button class="white-round-btn">Order Now</button>
+					</div>
+				</div>
+				<div class="burger-item-card">
+					<img src="img/burger3.jpg" alt="">
+					<h3>Black Burger</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero rhoncus
+						posuere. Donec consequat laoreet massa. Duis.
+					</p>
+					<div>
+						<h4>
+							Price: $12
+						</h4>
+						<button class="white-round-btn">Order Now</button>
+					</div>
+				</div>
+			</div>
+			<div class="next-arrow"><i class="fas fa-greater-than"></i></div>
+		</div>
+		<div class="view-all-button">
+			<button class="orange-round-btn">View All</button>
+		</div>
+		<div class="burger-pack">
+			<div class="container2 burger-pack-section">
+				<div class="burger-pack-card family-pack">
+					<img src="img/half-burger.png" alt="">
+					<div>
+						<h3>Family Pack</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, ligula at.</p>
+						<button>Visit Pack</button>
+					</div>
+				</div>
+				<div class="burger-pack-card couple-back">
+					<img src="img/half-burger.png" alt="">
+					<div>
+						<h3>Couple Pack</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, ligula at.</p>
+						<button>Visit Pack</button>
+					</div>
+				</div>
+				<div class="burger-pack-card custom-pack">
+					<img src="img/half-burger.png" alt="">
+					<div>
+						<h3>Custom Pack</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare, ligula at.</p>
+						<button>Contact Us</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="about-us" id="about-us">
+		<div class="container about-us-section">
+			<div class="logo">
+				<img src="img/fast-food.svg" alt="Fast Food Logo">
+			</div>
+			<div class="about-us-desc">
+				<h2>About Us</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet lobortis leo, non semper
+					justo porttitor a. Donec rutrum dolor sem, vel auctor orci tincidunt id. In egestas, velit in
+					malesuada hendrerit, nunc turpis volutpat diam, quis varius ligula eros.
+				</p>
+				<button class="orange-round-btn">View All</button>
+			</div>
+		</div>
+	</div>
+	<div class="testimonials" id="testimonials">
+		<div class="container">
+			<h2>Testimonials</h2>
+			<div class="testimonials-section">
+				<div class="testimonial-card">
+					<img src="img/face1.jpg" alt="">
+					<h3>John Doe</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
+					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+						class="fas fa-star"></i><i class="fas fa-star"></i>
+				</div>
+				<div class="testimonial-card">
+					<img src="img/face2.jpg" alt="">
+					<h3>Jane Doe</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
+					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+						class="fas fa-star"></i><i class="fas fa-star"></i>
+				</div>
+				<div class="testimonial-card">
+					<img src="img/face3.jpg" alt="">
+					<h3>John Doe</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
+					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+						class="fas fa-star"></i><i class="fas fa-star"></i>
+				</div>
+				<div class="testimonial-card">
+					<img src="img/face4.jpg" alt="">
+					<h3>Jane Doe</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
+					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+						class="fas fa-star"></i><i class="fas fa-star"></i>
+				</div>
+			</div>
+			<div class="view-all-button">
+				<button class="orange-round-btn">View All</button>
+			</div>
+		</div>
+	</div>
+	<div class="feedback-map" id="feedback-map">
+		<div class="container2 feedback-map-container">
+			<div class="feedback-section">
+				<div class="form-group">
+					<h2>Send Your Feedback</h2>
+					<form action="get">
+						<div class="field-group">
+							<label for="name">Name</label>
+							<input class="label-block" type="text" name="name" id="name" placeholder="Name">
+						</div>
+						<div class="field-group">
+							<label for="email">Email</label>
+							<input class="label-block" type="text" name="email" id="email" placeholder="Email">
+						</div>
+						<div class="field-group">
+							<label for="rateus">Rate Us</label>
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+								class="fas fa-star"></i><i class="fas fa-star"></i>
+						</div>
+						<div class="field-group">
+							<label for="message">Message</label>
+							<textarea class="label-block" name="message" id="message" rows="8"></textarea>
+						</div>
+						<button>Send</button>
+					</form>
+				</div>
+			</div>
+			<div class="map-section">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3341.8214063536707!2d-96.73822348124968!3d33.11377876769637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1610343847113!5m2!1sen!2sus"
+					width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+					tabindex="0"></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="contact-us" id="contact-us">
+		<div class="container">
+			<h2>Contact Us</h2>
+			<p>9999 Market St <br>Plano, TX 75024</p>
+			<p>(469) 555-5555</p>
+			<p><a href="mailto:customerservice@gmail.com">customerservice@email.com</a></p>
+			<div class="social-media">
+				<hr>
+				<div class="social-media-btn-group">
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-instagram-square"></i>
+					<i class="fab fa-twitter-square"></i>
+				</div>
+				<hr>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a
+				href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> UI Desgin <a
+				href="https://dribbble.com/shots/14861662-UI-Landing-Page-for-Fastfood">ProjectZenic</a>
+		</div>
+
+	</footer>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>
