@@ -4,15 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;600;700&display=swap"
 		rel="stylesheet">
 	<script src="https://kit.fontawesome.com/650855182c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
 	<title>Bistro Burger</title>
-
 </head>
 
 <body>
@@ -61,14 +59,29 @@
 				<button class="orange-round-btn">More Deals</button>
 			</div>
 			<div class="product-carousel">
-				<img src="img/cheese-burger.png" alt="">
+				<div class="swiper-container swiper1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide hero-slide">
+							<img src="img/cheese-burger.png" alt="">
+						</div>
+						<div class="swiper-slide hero-slide">
+							<img src="img/cheese-burger.png" alt="">
+						</div>
+						<div class="swiper-slide hero-slide">
+							<img src="img/cheese-burger.png" alt="">
+						</div>
+						<div class="swiper-slide hero-slide">
+							<img src="img/cheese-burger.png" alt="">
+						</div>
+					</div>
+				</div>
+				<!-- Add Arrows -->
 				<div class="carousel-buttons">
-					<button class="round-button disabled-carousel-button">&#60;</button>
-					<button class="round-button">&#62;</button>
+					<div class="round-button prev-slide">&#60;</div>
+					<div class="round-button next-slide">&#62;</div>
 				</div>
 			</div>
 		</div>
-
 	</header>
 	<div id="menu" class="menu">
 		<div class="container">
@@ -85,47 +98,97 @@
 		</div>
 		<div class="burger-menu-carousel">
 			<div class="prev-arrow"><i class="fas fa-less-than"></i></div>
-			<div class="burger-menu-items container">
-				<div class="burger-item-card">
-					<img src="img/burger1.jpg" alt="">
-					<h3>Beef Burger</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero rhoncus
-						posuere. Donec consequat laoreet massa. Duis.
-					</p>
-					<div>
-						<h4>
-							Price: $7
-						</h4>
-						<button class="white-round-btn">Order Now</button>
+			<div class="swiper-container swiper2 container">
+				<div class="swiper-wrapper">
+					<div class="burger-item-card swiper-slide">
+						<img src="img/burger1.jpg" alt="">
+						<h3>Beef Burger</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero
+							rhoncus
+							posuere. Donec consequat laoreet massa. Duis.
+						</p>
+						<div>
+							<h4>
+								Price: $7
+							</h4>
+							<button class="white-round-btn">Order Now</button>
+						</div>
 					</div>
-				</div>
-				<div class="burger-item-card">
-					<img src="img/burger2.jpg" alt="">
-					<h3>Cheese Burger</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero rhoncus
-						posuere. Donec consequat laoreet massa. Duis.
-					</p>
-					<div>
-						<h4>
-							Price: $10
-						</h4>
-						<button class="white-round-btn">Order Now</button>
+					<div class="burger-item-card swiper-slide">
+						<img src="img/burger2.jpg" alt="">
+						<h3>Cheese Burger</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero
+							rhoncus
+							posuere. Donec consequat laoreet massa. Duis.
+						</p>
+						<div>
+							<h4>
+								Price: $10
+							</h4>
+							<button class="white-round-btn">Order Now</button>
+						</div>
 					</div>
-				</div>
-				<div class="burger-item-card">
-					<img src="img/burger3.jpg" alt="">
-					<h3>Black Burger</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero rhoncus
-						posuere. Donec consequat laoreet massa. Duis.
-					</p>
-					<div>
-						<h4>
-							Price: $12
-						</h4>
-						<button class="white-round-btn">Order Now</button>
+					<div class="burger-item-card swiper-slide">
+						<img src="img/burger3.jpg" alt="">
+						<h3>Black Burger</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero
+							rhoncus
+							posuere. Donec consequat laoreet massa. Duis.
+						</p>
+						<div>
+							<h4>
+								Price: $12
+							</h4>
+							<button class="white-round-btn">Order Now</button>
+						</div>
+					</div>
+					<div class="burger-item-card swiper-slide">
+						<img src="img/burger1.jpg" alt="">
+						<h3>Beef Burger</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero
+							rhoncus
+							posuere. Donec consequat laoreet massa. Duis.
+						</p>
+						<div>
+							<h4>
+								Price: $7
+							</h4>
+							<button class="white-round-btn">Order Now</button>
+						</div>
+					</div>
+					<div class="burger-item-card swiper-slide">
+						<img src="img/burger2.jpg" alt="">
+						<h3>Cheese Burger</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero
+							rhoncus
+							posuere. Donec consequat laoreet massa. Duis.
+						</p>
+						<div>
+							<h4>
+								Price: $10
+							</h4>
+							<button class="white-round-btn">Order Now</button>
+						</div>
+					</div>
+					<div class="burger-item-card swiper-slide">
+						<img src="img/burger3.jpg" alt="">
+						<h3>Black Burger</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae nisi quis libero
+							rhoncus
+							posuere. Donec consequat laoreet massa. Duis.
+						</p>
+						<div>
+							<h4>
+								Price: $12
+							</h4>
+							<button class="white-round-btn">Order Now</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -162,7 +225,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 	<div class="about-us" id="about-us">
 		<div class="container about-us-section">
@@ -273,12 +335,14 @@
 	<footer>
 		<div class="container">
 			Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a
-				href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> UI Desgin <a
+				href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> - UI Desgin <a
 				href="https://dribbble.com/shots/14861662-UI-Landing-Page-for-Fastfood">ProjectZenic</a>
 		</div>
 
 	</footer>
-	<script src="scripts/script.js"></script>
 </body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="scripts/script.js"></script>
 
 </html>

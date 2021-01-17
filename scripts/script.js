@@ -22,3 +22,37 @@ menuIcon.addEventListener('click', function () { toggleSlideMenu() });
 for (const link of slideoutMenuLinks) {
 	link.addEventListener('click', function () { toggleSlideMenu() });
 }
+
+// Swiper API for carousel
+var swiper = new Swiper('.swiper1', {
+	navigation: {
+		nextEl: '.next-slide',
+		prevEl: '.prev-slide',
+	},
+
+	// autoHeight: true
+});
+
+var swiper2 = new Swiper('.swiper2', {
+	navigation: {
+		nextEl: '.next-arrow',
+		prevEl: '.prev-arrow',
+	},
+
+	breakpoints: {
+		640: {
+			slidesPerView: 1,
+			spaceBetween: 40,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 40,
+		},
+		1024: {
+			slidesPerView: 3,
+			spaceBetween: 40,
+		},
+	}
+
+	// autoHeight: true
+});
