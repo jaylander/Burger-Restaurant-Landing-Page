@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 72px;
 }
 
 body {
@@ -15,7 +16,8 @@ h2 {
     color: #ff2600;
 }
 
-html, body {
+html,
+body {
     position: relative;
     height: 100%;
 }
@@ -56,16 +58,29 @@ header {
     position: relative;
     background: linear-gradient(to right, #ffffff 50%, #ffcc00 50%);
     padding-top: 20px;
+    /* padding-bottom: 40px; */
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 0px;
+    height: 72px;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
 nav img {
     height: 50px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 nav ul {
@@ -86,9 +101,21 @@ nav li a {
     padding: 5px 0;
 }
 
+nav .menu-icon {
+    display: none;
+    font-size: 2rem;
+    /* height: 72px;
+    width: 72px; */
+}
+
+.scroll {
+    background-color: #ffcc00;
+}
+
 .active {
     color: #ff2600 !important;
     border-bottom: 3px solid #ff2600;
+    transition: all 0.3s ease;
 }
 
 nav li a:link {
@@ -99,17 +126,12 @@ nav li a:visited {
     color: #000000;
 }
 
-.menu-icon {
-    display: none;
-    font-size: 2rem;
-}
-
 /* Slideout Menu */
 
 .slideout-menu {
-	display: none;
+    display: none;
     background-color: rgba(255, 204, 0, 0.9);
-    z-index: 100;
+    z-index: 200;
     position: fixed;
     transition: 0.7s;
     transition-timing-function: ease-in-out;
@@ -117,7 +139,7 @@ nav li a:visited {
     width: 100%;
     text-align: center;
     pointer-events: none;
-	top: -300px;
+    top: -330px;
 }
 
 .slideout-menu ul {
@@ -138,10 +160,10 @@ nav li a:visited {
 .search-group {
     position: relative;
     width: 400px;
-    margin-top: 10px;
 }
 
-.search-group input, .slideout-menu input {
+.search-group input,
+.slideout-menu input {
     border: 0;
     width: 100%;
     height: 40px;
@@ -150,7 +172,8 @@ nav li a:visited {
     box-sizing: border-box;
 }
 
-.search-group button, .slideout-menu button {
+.search-group button,
+.slideout-menu button {
     border: 0;
     background-color: transparent;
     position: absolute;
@@ -168,49 +191,41 @@ nav li a:visited {
 }
 
 .hero-section {
-	height: 520px;
-	padding-top: 50px;
+    top: 0;
+    padding-top: 120px;
 }
 
 .company-desc {
-	position: absolute;
-	top: 70px;
-	width: 15%;
-    height: 500px;
+    position: absolute;
+    top: 120px;
+    width: 15%;
 }
 
 .company-desc h1 {
     font-size: 5rem;
+    margin: 0;
 }
 
 .company-desc p {
     font-size: 1.25rem;
 }
 
-.swiper1 {
-	width: 45%;
-	height: auto;
-}
-
-.hero-slide {
+.swiper1 .hero-slide {
     text-align: center;
     font-size: 18px;
-}
-.hero-slide img {
-	width: 100%;
 }
 
 .carousel-buttons {
     display: flex;
     align-items: center;
-	justify-content: center;
+    justify-content: center;
+    padding-bottom: 40px;
 }
 
-
 .round-button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     background-color: #ff2600;
     border: 0;
@@ -218,12 +233,15 @@ nav li a:visited {
     width: 44px;
     border-radius: 50%;
     padding: 10px;
-	margin: 0 20px;
-	font-size: 2rem;
+    margin: 0 20px;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-.menu h2 {
+section.menu h2 {
     text-align: center;
+    padding-top: 30px;
+    margin: 0;
 }
 
 .view-all-button {
@@ -245,11 +263,13 @@ nav li a:visited {
     align-items: center;
 }
 
-.prev-arrow, .next-arrow {
+.prev-arrow,
+.next-arrow {
     color: #ff9100;
     font-size: 3em;
     text-align: center;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .burger-menu-items {
@@ -263,7 +283,8 @@ nav li a:visited {
     color: #fff;
 }
 
-.burger-item-card h3, .burger-item-card p {
+.burger-item-card h3,
+.burger-item-card p {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -331,11 +352,11 @@ nav li a:visited {
     margin-right: 20px;
 }
 
-.about-us {
+section.about-us {
     width: 100%;
 }
 
-.about-us:before {
+section.about-us:before {
     position: absolute;
     z-index: -1;
     width: 25%;
@@ -344,22 +365,27 @@ nav li a:visited {
     content: "";
 }
 
-.about-us-section {
-    padding-top: 50px;
+section .about-us-section {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 50px;
+    height: 420px;
 }
 
-.logo {
+section .about-us-desc {
+    padding-top: 20px;
+}
+
+section .logo {
+    margin-top: 20px;
     border-radius: 50%;
     background-color: #fff;
     border: 3px solid #ffcc00;
     width: 300px;
     height: 300px;
     text-align: center;
-    float: left
+    float: left;
 }
 
 .logo img {
@@ -372,7 +398,7 @@ nav li a:visited {
 
 .testimonials h2 {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 
 .testimonials-section {
@@ -418,8 +444,8 @@ nav li a:visited {
     padding: 12px 20px;
     margin: 8px 0;
     border: 0;
-	box-sizing: border-box;
-	width: 100%;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .feedback-section textarea {
@@ -427,13 +453,13 @@ nav li a:visited {
     padding: 12px 20px;
     resize: none;
     box-sizing: border-box;
-	margin-top: 10px;
-	width: 100%;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .form-group {
-	width: 80%;
-	margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .label-block {
@@ -441,7 +467,7 @@ nav li a:visited {
 }
 
 .field-group {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .field-group i {
@@ -466,15 +492,16 @@ nav li a:visited {
     border: 0;
 }
 
-.contact-us {
+section.contact-us {
     text-align: center;
 }
 
-.contact-us h2 {
-    margin-top: 50px;
+section.contact-us h2 {
+    padding-top: 50px;
+    margin: 0;
 }
 
-.contact-us p a {
+section.contact-us p a {
     color: #ff2600;
 }
 
@@ -506,49 +533,51 @@ footer {
     padding: 20px;
 }
 
-
 @media only screen and (max-width: 900px) {
     header {
         position: relative;
         background: #ffcc00;
-        padding-top: 20px;
+        top: 72px;
+        padding-top: 0;
+        margin-bottom: 72px;
     }
-    nav ul, .search-group {
+    nav {
+        background: #ffcc00;
+    }
+    nav ul,
+    .search-group {
         display: none;
     }
     .slideout-menu {
         display: block;
     }
-    .menu-icon {
+    nav .menu-icon {
         display: block;
     }
     .hero-section {
-		/* display: flex;
+        /* display: flex;
         flex-wrap: wrap; */
-		color: #fff;
-		height: auto;
-		padding-top: 0;
-		padding-bottom: 40px;
-	}
-	
-	.swiper1 {
-		width: 100%;
-		height: auto;
-	}
+        color: #fff;
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+
+    .swiper1 .hero-slide img {
+        width: 100%;
+        height: auto;
+    }
     .company-desc {
-		position: relative;
+        position: relative;
         width: 100%;
         text-align: center;
-		height: auto;
-		top: 0;
+        height: auto;
+        top: 0;
     }
     .company-desc h1 {
         margin: 0;
     }
 
-    /* .burger-item-card button {
-        height: 40px;
-    } */
     .burger-pack-card img {
         height: 75px;
     }
@@ -594,30 +623,32 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    /* .burger-pack-section {
-		display: flex;
-		flex-wrap: wrap;
-	} */
-    /* .burger-item-card div {
-        display: block;
+    .company-desc h1 {
+        font-size: 2.5rem;
     }
-    .burger-item-card button {
-        margin-top: 0;
-    } */
-    .about-us:before {
+    section.about-us:before {
         display: none;
     }
-    .about-us-section {
-        display: block;
-    }
-    .about-us .logo {
+    section.about-us .logo {
         display: none;
     }
-    .about-us-desc {
+    section .about-us-section {
+        display: block;
+        padding-top: 10px;
+        height: auto;
+    }
+    section .about-us-desc {
         width: 100%;
         text-align: center;
     }
-    .about-us-desc p {
+    section .about-us-desc p {
         text-align: left;
+    }
+    .testimonials-section {
+        grid-template-columns: 1fr;
+    }
+    .testimonial-card img {
+        border-radius: 50%;
+        width: 75%;
     }
 }

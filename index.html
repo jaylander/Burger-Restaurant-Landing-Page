@@ -31,14 +31,14 @@
 				</li>
 			</ul>
 		</div>
-		<div class="container">
-			<nav>
+		<nav id="nav">
+			<div class="container">
 				<img src="img/fast-food.svg" alt="Fast Food Logo">
 				<ul>
-					<li><a href="#home" class="active">Home</a></li>
-					<li><a href="#menu">Menu</a></li>
-					<li><a href="#about-us">About Us</a></li>
-					<li><a href="#contact-us">Contact</a></li>
+					<li><a href="#home" class="home active">Home</a></li>
+					<li><a href="#menu" class="menu">Menu</a></li>
+					<li><a href="#about-us" class="about-us">About Us</a></li>
+					<li><a href="#contact-us" class="contact-us">Contact</a></li>
 				</ul>
 				<div class="menu-icon" id="menu-icon">
 					<i class="fas fa-bars"></i>
@@ -49,17 +49,17 @@
 						<button><i class="fas fa-search"></i></button>
 					</form>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 
-		<div id="home" class="container hero-section">
+		<section id="home" class="container hero-section">
 			<div class="company-desc">
 				<h1>Burger Bistro</h1>
 				<p>The best food is that which is made from the heart.</p>
 				<button class="orange-round-btn">More Deals</button>
 			</div>
 			<div class="product-carousel">
-				<div class="swiper-container swiper1">
+				<div class="swiper swiper1">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide hero-slide">
 							<img src="img/cheese-burger.png" alt="">
@@ -81,15 +81,15 @@
 					<div class="round-button next-slide">&#62;</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</header>
-	<div id="menu" class="menu">
+	<section id="menu" class="menu">
 		<div class="container">
 			<h2>Burger Menu</h2>
 			<div class="burger-menu-categories">
 				<ul>
 					<li class="active">Best Sales</li>
-					<li>Recomended</li>
+					<li>Recommended</li>
 					<li>Beef Burgers</li>
 					<li>Chicken Burgers</li>
 					<li>Vegetarian Burgers</li>
@@ -98,7 +98,7 @@
 		</div>
 		<div class="burger-menu-carousel">
 			<div class="prev-arrow"><i class="fas fa-less-than"></i></div>
-			<div class="swiper-container swiper2 container">
+			<div class="swiper swiper2 container">
 				<div class="swiper-wrapper">
 					<div class="burger-item-card swiper-slide">
 						<img src="img/burger1.jpg" alt="">
@@ -225,8 +225,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="about-us" id="about-us">
+	</section>
+	<section class="about-us" id="about-us">
 		<div class="container about-us-section">
 			<div class="logo">
 				<img src="img/fast-food.svg" alt="Fast Food Logo">
@@ -241,86 +241,87 @@
 				<button class="orange-round-btn">View All</button>
 			</div>
 		</div>
-	</div>
-	<div class="testimonials" id="testimonials">
-		<div class="container">
-			<h2>Testimonials</h2>
-			<div class="testimonials-section">
-				<div class="testimonial-card">
-					<img src="img/face1.jpg" alt="">
-					<h3>John Doe</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
-					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-						class="fas fa-star"></i><i class="fas fa-star"></i>
+
+		<div class="testimonials" id="testimonials">
+			<div class="container">
+				<h2>Testimonials</h2>
+				<div class="testimonials-section">
+					<div class="testimonial-card">
+						<img src="img/face1.jpg" alt="">
+						<h3>John Doe</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
+						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+							class="fas fa-star"></i><i class="fas fa-star"></i>
+					</div>
+					<div class="testimonial-card">
+						<img src="img/face2.jpg" alt="">
+						<h3>Jane Doe</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
+						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+							class="fas fa-star"></i><i class="fas fa-star"></i>
+					</div>
+					<div class="testimonial-card">
+						<img src="img/face3.jpg" alt="">
+						<h3>John Doe</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
+						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+							class="fas fa-star"></i><i class="fas fa-star"></i>
+					</div>
+					<div class="testimonial-card">
+						<img src="img/face4.jpg" alt="">
+						<h3>Jane Doe</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
+						<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+							class="fas fa-star"></i><i class="fas fa-star"></i>
+					</div>
 				</div>
-				<div class="testimonial-card">
-					<img src="img/face2.jpg" alt="">
-					<h3>Jane Doe</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
-					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-						class="fas fa-star"></i><i class="fas fa-star"></i>
+				<div class="view-all-button">
+					<button class="orange-round-btn">View All</button>
 				</div>
-				<div class="testimonial-card">
-					<img src="img/face3.jpg" alt="">
-					<h3>John Doe</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
-					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-						class="fas fa-star"></i><i class="fas fa-star"></i>
-				</div>
-				<div class="testimonial-card">
-					<img src="img/face4.jpg" alt="">
-					<h3>Jane Doe</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat.</p>
-					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-						class="fas fa-star"></i><i class="fas fa-star"></i>
-				</div>
-			</div>
-			<div class="view-all-button">
-				<button class="orange-round-btn">View All</button>
 			</div>
 		</div>
-	</div>
-	<div class="feedback-map" id="feedback-map">
-		<div class="container2 feedback-map-container">
-			<div class="feedback-section">
-				<div class="form-group">
-					<h2>Send Your Feedback</h2>
-					<form action="get">
-						<div class="field-group">
-							<label for="name">Name</label>
-							<input class="label-block" type="text" name="name" id="name" placeholder="Name">
-						</div>
-						<div class="field-group">
-							<label for="email">Email</label>
-							<input class="label-block" type="text" name="email" id="email" placeholder="Email">
-						</div>
-						<div class="field-group">
-							<label for="rateus">Rate Us</label>
-							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-								class="fas fa-star"></i><i class="fas fa-star"></i>
-						</div>
-						<div class="field-group">
-							<label for="message">Message</label>
-							<textarea class="label-block" name="message" id="message" rows="8"></textarea>
-						</div>
-						<button>Send</button>
-					</form>
+		<div class="feedback-map" id="feedback-map">
+			<div class="container2 feedback-map-container">
+				<div class="feedback-section">
+					<div class="form-group">
+						<h2>Send Your Feedback</h2>
+						<form action="get">
+							<div class="field-group">
+								<label for="name">Name</label>
+								<input class="label-block" type="text" name="name" id="name" placeholder="Name">
+							</div>
+							<div class="field-group">
+								<label for="email">Email</label>
+								<input class="label-block" type="text" name="email" id="email" placeholder="Email">
+							</div>
+							<div class="field-group">
+								<label for="rateus">Rate Us</label>
+								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+									class="fas fa-star"></i><i class="fas fa-star"></i>
+							</div>
+							<div class="field-group">
+								<label for="message">Message</label>
+								<textarea class="label-block" name="message" id="message" rows="8"></textarea>
+							</div>
+							<button>Send</button>
+						</form>
+					</div>
+				</div>
+				<div class="map-section">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3341.8214063536707!2d-96.73822348124968!3d33.11377876769637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1610343847113!5m2!1sen!2sus"
+						width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+						aria-hidden="false" tabindex="0"></iframe>
 				</div>
 			</div>
-			<div class="map-section">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3341.8214063536707!2d-96.73822348124968!3d33.11377876769637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1610343847113!5m2!1sen!2sus"
-					width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-					tabindex="0"></iframe>
-			</div>
 		</div>
-	</div>
-	<div class="contact-us" id="contact-us">
+	</section>
+	<section class="contact-us" id="contact-us">
 		<div class="container">
 			<h2>Contact Us</h2>
 			<p>9999 Market St <br>Plano, TX 75024</p>
 			<p>(469) 555-5555</p>
-			<p><a href="mailto:customerservice@gmail.com">customerservice@email.com</a></p>
+			<p><a href="mailto:customerservice@email.com">customerservice@email.com</a></p>
 			<div class="social-media">
 				<hr>
 				<div class="social-media-btn-group">
@@ -331,12 +332,12 @@
 				<hr>
 			</div>
 		</div>
-	</div>
+	</section>
 	<footer>
 		<div class="container">
-			Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a
-				href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> - UI Desgin <a
-				href="https://dribbble.com/shots/14861662-UI-Landing-Page-for-Fastfood">ProjectZenic</a>
+			Icons made by <a href="https://smashicons.com/" title="Smashicons" target="_blank">Smashicons</a> from <a
+				href="https://www.flaticon.com/" title="Flaticon" target="_blank"> www.flaticon.com</a> - UI Desgin <a
+				href="https://dribbble.com/shots/14861662-UI-Landing-Page-for-Fastfood" target="_blank">ProjectZenic</a>
 		</div>
 
 	</footer>
